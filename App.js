@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Colors } from './Colors';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.mainText}>Let's Build NGL UI!!!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +14,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.SECONDARY_COLOR,
     alignItems: 'center',
     justifyContent: 'center',
   },
+  mainText: {
+    color: Colors.PRIMARY_COLOR,
+  }
 });
