@@ -1,8 +1,10 @@
+//import libraries
 import { View, Text, Image } from 'react-native';
 import tw from 'twrnc';
 import { LinearGradient } from 'expo-linear-gradient';
-
 import React from 'react';
+
+//import components
 import CustomButton from '../components/CustomButton';
 
 const Onboarding = ({ navigation }) => {
@@ -15,7 +17,7 @@ const Onboarding = ({ navigation }) => {
                     <CustomButton style={tw`bg-white px-5 py-5 rounded-full w-[300px] flex flex-row justify-center items-center`} onPress={() => navigation.navigate("Handle")}>
                         <Text style={tw`text-black text-xl font-bold text-center`}>Get Started!</Text>
                     </CustomButton>
-                    <Text style={tw`text-white text-sm font-normal text-center`}>By continuing, you agree to our Terms of Use and have read and agreed to our Privacy Policy</Text>
+                    <Text style={tw`text-white text-xs font-normal text-center w-[376px]`}>By continuing, you agree to our Terms of Use and have read and agreed to our Privacy Policy</Text>
                 </View>
             </LinearGradient>
         </>
