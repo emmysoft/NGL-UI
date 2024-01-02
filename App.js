@@ -1,24 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Colors } from './Colors';
+import { View } from 'react-native';
+// import tw from "twrnc";
+
+import Onboarding from './screens/Onboarding';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.mainText}>Let's Build NGL UI!!!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <View>
+        <Onboarding />
+        <StatusBar style="light" />
+      </View>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.SECONDARY_COLOR,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  mainText: {
-    color: Colors.PRIMARY_COLOR,
-  }
-});

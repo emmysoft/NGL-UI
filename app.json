@@ -4,10 +4,10 @@
     "slug": "NGL",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/nglIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/nglIcon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
