@@ -12,7 +12,7 @@ const Onboarding = ({ navigation }) => {
         <>
             <LinearGradient colors={['#ef2673', '#fa6e2d']}>
                 <View style={tw`flex flex-col justify-center items-center gap-16 h-full mt-10`}>
-                    <Image source={require("../assets/new-icon.png")} style={tw`w-64`} />
+                    <Image source={require("../assets/new-icon.png")} style={tw`w-72`} />
                     <Text style={tw`text-2xl text-center text-white h-20 font-bold`}>Get anonymous messages on Instagram!</Text>
                     <CustomButton style={tw`bg-white px-5 py-5 rounded-full w-[300px] flex flex-row justify-center items-center`} onPress={() => navigation.navigate("Handle")}>
                         <Text style={tw`text-black text-xl font-bold text-center`}>Get Started!</Text>
