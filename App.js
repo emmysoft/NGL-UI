@@ -2,15 +2,38 @@
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import 'react-native-gesture-handler';
+import Constants from "expo-constants";
 
 //import screens
 import Onboarding from './screens/Onboarding';
 import Handle from './screens/Handle';
-import Account from './screens/Account';
+import Play from './screens/TabScreens/Play';
+import Inbox from './screens/TabScreens/Inbox';
 
 const Stack = createStackNavigator();
+const Tab = createMaterialTopTabNavigator();
 
-export default function App() {
+
+export function Account() {
+  return (
+    <>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarLabelStyle: { fontSize: 18, fontWeight: "500" },
+          tabBarPressColor: "#3a97f4"
+        }}
+        style={{ marginTop: Constants.statusBarHeight }}
+      >
+        <Tab.Screen name='Play' component={Play} />
+        <Tab.Screen name='Inbox' component={Inbox} />
+      </Tab.Navigator>
+    </>
+  )
+}
+
+export function App() {
   return (
     <>
       <NavigationContainer>
@@ -20,8 +43,9 @@ export default function App() {
           <Stack.Screen name='Account' component={Account} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
-      <StatusBar style="dark" />
-
+      <StatusBar style="light" />
     </>
   );
 }
+
+export default App;

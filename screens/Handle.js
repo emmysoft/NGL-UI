@@ -1,6 +1,6 @@
 //import libraries
-import { View, Text, Image, KeyboardAvoidingView } from 'react-native';
-import React, { useState } from 'react';
+import { View, Text, Image, KeyboardAvoidingView, Platform } from 'react-native';
+import { useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 import tw from 'twrnc';
 
@@ -10,21 +10,21 @@ import CustomButton from '../components/CustomButton';
 
 const Handle = ({ navigation }) => {
 
-    const [email, setEmail] = useState("");
+    const [handle, setHandle] = useState("");
 
     return (
         <>
-            <KeyboardAvoidingView>
+            <KeyboardAvoidingView behavior={Platform.OS === 'iox' ? 'padding' : 'height'}>
                 <LinearGradient colors={['#ef2673', '#fa6e2d']}>
                     <View style={tw`flex flex-col justify-center items-center gap-4 h-full pb-40`}>
-                        <Image source={require("../assets/new-icon.png")} />
+                        <Image source={require("../assets/new-icon.png")} style={tw`w-60`} />
                         <Text style={tw`w-80 text-center text-white font-bold text-lg`}>What's your Instagram handle?</Text>
                         <Text style={tw`w-60 text-center text-gray-200 text-base font-light text-sm`}>Ex. @emmysoft.io</Text>
                         <CustomInput
                             placeholder="@"
-                            value={email}
-                            type="email"
-                            onChangeText={(text) => setEmail(text)}
+                            value={handle}
+                            type="text"
+                            onChangeText={(text) => setHandle(text)}
                             placeholderTextColor="#992B3B"
                             style={tw`bg-gray-300 rounded-lg px-4 py-2 opacity-30 w-60 text-base`}
                         />
