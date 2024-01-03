@@ -20,7 +20,7 @@ export default function App() {
           <Stack.Screen name='Account' component={Account} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
 
     </>
   );
