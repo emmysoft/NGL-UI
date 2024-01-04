@@ -21,7 +21,7 @@ export function Account() {
     <>
       <Tab.Navigator
         screenOptions={{
-          tabBarLabelStyle: { fontSize: 18, fontWeight: "500" },
+          tabBarLabelStyle: { fontSize: 18, fontWeight: "bold" },
           tabBarPressColor: "#3a97f4"
         }}
         style={{ marginTop: Constants.statusBarHeight }}
@@ -33,7 +33,7 @@ export function Account() {
   )
 }
 
-export function App() {
+function App() {
   return (
     <>
       <NavigationContainer>
