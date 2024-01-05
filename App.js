@@ -11,6 +11,7 @@ import Onboarding from './screens/Onboarding';
 import Handle from './screens/Handle';
 import Play from './screens/TabScreens/Play';
 import Inbox from './screens/TabScreens/Inbox';
+import Messages from './screens/Messages';
 
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();
@@ -41,6 +42,7 @@ function App() {
           <Stack.Screen name='Onboarding' component={Onboarding} options={{ headerShown: false }} />
           <Stack.Screen name='Handle' component={Handle} options={{ headerShown: false }} />
           <Stack.Screen name='Account' component={Account} options={{ headerShown: false }} />
+          <Stack.Screen name='Messages' component={Messages} />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="light" />
