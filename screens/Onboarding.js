@@ -26,7 +26,7 @@ const Onboarding = ({ navigation }) => {
                             Get Started!
                         </Text>
                     </CustomButton>
-                    <Text style={tw`text-white text-xs font-normal text-center w-[376px]`}>
+                    <Text style={tw`text-white text-xs font-normal text-center w-[300px]`}>
                         By continuing, you agree to our Terms of Use and have read and agreed to our Privacy Policy
                     </Text>
                 </View>

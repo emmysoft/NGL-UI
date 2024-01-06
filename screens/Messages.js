@@ -9,7 +9,7 @@ import CustomButton from "../components/CustomButton";
 const Messages = () => {
   return (
     <View style={tw`flex flex-col justify-center items-center gap-24 bg-white h-full`}>
-      <View style={tw`flex flex-row justify-center items-center bg-[#ef2673] p-16 rounded-lg mb-24`}>
+      <View style={tw`flex flex-row justify-center items-center bg-blue-400 p-12 rounded-lg mb-24`}>
         <Text style={tw`text-white text-2xl font-bold text-center w-60`}>
             Hello there! You know I love you so much! Guess who? 😄 
         </Text>

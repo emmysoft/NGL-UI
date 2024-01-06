@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import 'react-native-gesture-handler';
 import Constants from "expo-constants";
+import Ionicons from "@expo/vector-icons";
 
 //import screens
 import Onboarding from './screens/Onboarding';
@@ -42,7 +43,7 @@ function App() {
           <Stack.Screen name='Onboarding' component={Onboarding} options={{ headerShown: false }} />
           <Stack.Screen name='Handle' component={Handle} options={{ headerShown: false }} />
           <Stack.Screen name='Account' component={Account} options={{ headerShown: false }} />
-          <Stack.Screen name='Messages' component={Messages} />
+          <Stack.Screen name='Messages' component={Messages} options={{ headerTitleAlign: "center" }} />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="light" />
