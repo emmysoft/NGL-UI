@@ -21,7 +21,7 @@ const Messages = () => {
         <CustomButton style={tw`flex flex-row justify-center items-center px-16 py-4 bg-black rounded-[60px]`}>
             <Text style={tw`text-white text-xl font-bold`}>Or did we do it? 🤔 </Text>
         </CustomButton>
-        <Text style={tw`text-black text-sm font-bold text-center`}>With 💘  from NGL Guess Who? </Text>
+        <Text style={tw`text-black text-sm font-bold text-center`}>With 💘  from NGL 2.0 </Text>
       </View>
     </View>
   )

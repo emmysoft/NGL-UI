@@ -18,6 +18,7 @@ const Handle = ({ navigation }) => {
                 <LinearGradient colors={['#ef2673', '#fa6e2d']}>
                     <View style={tw`flex flex-col justify-center items-center gap-4 h-full`}>
                         <Image source={require("../assets/new-icon.png")} style={tw`w-60`} />
+                        <Text style={tw`font-bold text-white text-xl text-center`}>NGL 2.0</Text>
                         <Text style={tw`w-80 text-center text-white font-bold text-lg`}>What's your Instagram handle?</Text>
                         <Text style={tw`w-60 text-center text-gray-200 text-base font-light text-sm`}>Ex. @emmysoft.io</Text>
                         <CustomInput

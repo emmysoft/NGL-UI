@@ -5,7 +5,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import 'react-native-gesture-handler';
 import Constants from "expo-constants";
-import Ionicons from "@expo/vector-icons";
 
 //import screens
 import Onboarding from './screens/Onboarding';

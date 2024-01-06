@@ -11,8 +11,9 @@ const Onboarding = ({ navigation }) => {
     return (
         <>
             <LinearGradient colors={['#ef2673', '#fa6e2d']}>
-                <View style={tw`flex flex-col justify-center items-center gap-16 h-full mt-10`}>
-                    <Image source={require("../assets/new-icon.png")} style={tw`w-72`} />
+                <View style={tw`flex flex-col justify-center items-center gap-12 h-full mt-10`}>
+                    <Image source={require("../assets/new-icon.png")} style={tw`w-72`} /> 
+                    <Text style={tw`font-bold text-white text-xl text-center`}>NGL 2.0</Text>
                     <Text style={tw`text-2xl text-center text-white h-20 font-bold`}>
                         Get anonymous messages on Instagram!
                     </Text>
